@@ -197,14 +197,20 @@
       P().vaseshelf(ctx, 8, 24, 2);
       P().bed(ctx, 88, 30, 2, 2);
       P().rug(ctx, 30, 52, 3, 2);
-      P().brokenvase(ctx, 40, 56);
+      P().brokenvase(ctx, 34, 58);
       const C = CH();
       const shake = Math.floor(t * 8) % 2;
-      person(ctx, C.me.child, 66 + shake, 70, { facing: 'down', pose: 'oops' });
-      // a guilty sweat drop
-      R(ctx, '#8fd3ff', 73, 50 + (Math.floor(t * 2) % 3), 2, 3);
-      // an empty spot on the shelf
-      R(ctx, 'rgba(0,0,0,0.15)', 30, 28, 4, 2);
+      person(ctx, C.me.child, 52 + shake, 72, { facing: 'right', pose: 'oops' });
+      R(ctx, '#8fd3ff', 58, 52 + (Math.floor(t * 2) % 3), 2, 3);      // sheepish sweat drop
+      R(ctx, 'rgba(0,0,0,0.15)', 30, 28, 4, 2);                       // the empty spot on the shelf
+      // Ouma, patiently gluing it back together (again)
+      person(ctx, C.avia, 80, 70, { facing: 'left', pose: 'carry' });
+      const vx = 72, vy = 50;
+      R(ctx, '#3c6fb0', vx + 1, vy + 2, 6, 6); R(ctx, '#3c6fb0', vx, vy + 4, 8, 3); R(ctx, '#2a5590', vx + 2, vy, 4, 2);
+      R(ctx, '#e8cf8a', vx + 2, vy + 3, 1, 1); R(ctx, '#e8cf8a', vx + 3, vy + 4, 1, 2); R(ctx, '#e8cf8a', vx + 4, vy + 6, 2, 1);   // glued cracks
+      R(ctx, '#f4f0e6', vx + 9, vy + 3, 2, 5); R(ctx, '#d9534f', vx + 9, vy + 2, 2, 1);   // glue tube
+      // "again..." — a few repaired-crack sparkles
+      if (Math.floor(t * 2) % 2) R(ctx, '#fff6c8', vx + 5, vy - 2, 1, 1);
     },
 
     dvds(ctx, t) {

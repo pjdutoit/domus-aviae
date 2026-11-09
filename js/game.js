@@ -38,7 +38,7 @@
       if (!d) return false;
       (d.found || []).forEach(id => { if (window.MEMORIES.some(m => m.id === id)) state.found.add(id); });
       state.finaleSeen = !!d.finale;
-      if (d.lang === 'en' || d.lang === 'la') state.lang = d.lang;
+      if (d.lang === 'la') state.lang = 'la'; else if (d.lang === 'af' || d.lang === 'en') state.lang = 'af';
       if (d.pos && M.walkable(d.pos[0], d.pos[1], true)) { player.tx = d.pos[0]; player.ty = d.pos[1]; }
       return state.found.size > 0;
     } catch (e) { return false; }
@@ -136,7 +136,7 @@
     if (room && room !== currentRoom) {
       currentRoom = room;
       const n = window.ROOM_NAMES[room];
-      if (n && !state.paused) window.UI.toast(romanCaps(n.la), n.en, true);
+      if (n && !state.paused) window.UI.toast(romanCaps(n.la), n.af, true);
     }
   }
 
@@ -277,7 +277,7 @@
     if (t) walkTo(t[0], t[1], null);
   }
 
-  function lockedToast() { window.UI.toast(window.TEXTS.lockedLa, window.TEXTS.lockedEn); window.GameAudio.knock(); }
+  function lockedToast() { window.UI.toast(window.TEXTS.lockedLa, window.TEXTS.lockedAf); window.GameAudio.knock(); }
 
   window.addEventListener('keydown', e => {
     if (state.paused || state.busy) return;
@@ -307,7 +307,7 @@
   function unlock() {
     state.unlocked = true;
     window.GameAudio.door();
-    setTimeout(() => window.UI.toast(window.TEXTS.unlockedLa, window.TEXTS.unlockedEn), 250);
+    setTimeout(() => window.UI.toast(window.TEXTS.unlockedLa, window.TEXTS.unlockedAf), 250);
     computeTrail();
     save();
   }

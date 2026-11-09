@@ -20,20 +20,20 @@
     $('titleText').textContent = T.title;
     $('subtitleText').textContent = T.subtitle;
     $('enterBtn').querySelector('.la').textContent = T.enter;
-    $('enterBtn').querySelector('.en').textContent = T.enterEn;
+    $('enterBtn').querySelector('.en').textContent = T.enterAf;
     $('introText').innerHTML = '';
     T.intro.forEach(p => { const el = document.createElement('p'); el.textContent = p; $('introText').appendChild(el); });
     $('introHint').textContent = T.introHint;
     $('beginBtn').querySelector('.la').textContent = T.begin;
-    $('beginBtn').querySelector('.en').textContent = T.beginEn;
+    $('beginBtn').querySelector('.en').textContent = T.beginAf;
     $('counter').querySelector('.lbl').textContent = T.counter.toUpperCase();
     $('counter').querySelector('.num').innerHTML = '<b>0</b>/' + window.MEMORIES.length;
     document.querySelectorAll('.credit, .credit-inline').forEach(el => { el.textContent = T.credit; });
     $('cardClose').querySelector('.la').textContent = T.close;
     $('galClose').querySelector('.la').textContent = T.close;
     $('galTitle').textContent = T.galleryTitle;
-    $('restartBtn').textContent = T.restart + ' · ' + T.restartEn;
-    $('cardNew').textContent = T.newMemoryLa + ' · ' + T.newMemoryEn;
+    $('restartBtn').textContent = T.restart + ' · ' + T.restartAf;
+    $('cardNew').textContent = T.newMemoryLa + ' · ' + T.newMemoryAf;
     $('finaleNext').querySelector('.la').textContent = T.close;
     $('inscr').innerHTML = '';
     T.inscription.forEach((line, i) => {
@@ -44,11 +44,11 @@
       if (i < T.inscription.length - 1) $('inscr').appendChild(document.createElement('br'));
     });
     $('inscrSub').textContent = T.inscriptionSub;
-    $('inscrSubEn').textContent = T.inscriptionSubEn;
+    $('inscrSubEn').textContent = T.inscriptionSubAf;
     $('dedication').textContent = T.dedication;
     $('signature').textContent = T.signature;
     $('revisitBtn').querySelector('.la').textContent = T.revisit;
-    $('revisitBtn').querySelector('.en').textContent = T.revisitEn;
+    $('revisitBtn').querySelector('.en').textContent = T.revisitAf;
     updateSoundBtn();
   }
 
@@ -81,9 +81,9 @@
     const m = currentMemory;
     if (!m) return;
     const la = window.Game.state.lang === 'la';
-    $('cardTitle').textContent = la ? m.titleLa : m.titleEn;
-    $('cardLa').textContent = la ? m.la : m.laEn;
-    $('cardLa').lang = la ? 'la' : 'en';
+    $('cardTitle').textContent = la ? m.titleLa : m.titleAf;
+    $('cardLa').textContent = la ? m.la : m.laAf;
+    $('cardLa').lang = la ? 'la' : 'af';
     $('cardText').textContent = m.text;
     document.querySelectorAll('#card .seg button').forEach(b => b.classList.toggle('on', b.dataset.lang === window.Game.state.lang));
   }
@@ -127,7 +127,7 @@
         b.className = 'gal-item';
         b.innerHTML = '<span></span><small></small>';
         b.firstChild.textContent = m.titleLa;
-        b.lastChild.textContent = window.ROOM_NAMES[m.room] ? window.ROOM_NAMES[m.room].en : '';
+        b.lastChild.textContent = window.ROOM_NAMES[m.room] ? window.ROOM_NAMES[m.room].af : '';
         b.addEventListener('click', () => {
           hide($('gallery'));
           openCard(m.id, false, () => { st.busy = false; });
@@ -150,7 +150,7 @@
     $('finaleTitle').textContent = T.finaleTitleLa;
     $('finaleLa').innerHTML = '';
     $('finaleLa').appendChild(document.createTextNode(T.finaleLa));
-    const g = document.createElement('span'); g.className = 'gloss'; g.textContent = T.finaleLaEn;
+    const g = document.createElement('span'); g.className = 'gloss'; g.textContent = T.finaleLaAf;
     $('finaleLa').appendChild(g);
     $('finaleText').textContent = T.finaleText;
     $('hud').classList.add('hidden');
@@ -210,8 +210,8 @@
     window.Game.begin();
     const st = window.Game.state;
     updateCounterQuiet(st.found.size);
-    if (st.unlocked && !st.finaleSeen) setTimeout(() => toast(T.unlockedLa, T.unlockedEn), 600);
-    else setTimeout(() => { const n = window.ROOM_NAMES.atrium; toast(window.Game.romanCaps(n.la), n.en, true); }, 500);
+    if (st.unlocked && !st.finaleSeen) setTimeout(() => toast(T.unlockedLa, T.unlockedAf), 600);
+    else setTimeout(() => { const n = window.ROOM_NAMES.atrium; toast(window.Game.romanCaps(n.la), n.af, true); }, 500);
   }
   function updateCounterQuiet(n) { $('counter').querySelector('.num').innerHTML = '<b>' + n + '</b>/' + window.MEMORIES.length; }
 

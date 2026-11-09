@@ -8,7 +8,7 @@ Plain HTML/CSS/JS with no build step. Open `index.html` or serve the folder.
 
 | What | Where |
 |---|---|
-| All memory text (Latin titles, Latin sentences, English memories), intro, finale and dedication | `js/memories.js` |
+| All memory text (Latin titles, Latin sentences, Afrikaans memories and translations), intro, finale and dedication | `js/memories.js` |
 | Character looks (hair, skin, clothes, height for Avia, me and the cousins) | `js/config.js` |
 | Map layout, furniture and room floors | `js/map.js` |
 | Finale music | Put a recording at `assets/audio/piano.mp3`. If it's missing, a synthesized *Ode to Joy* plays. |

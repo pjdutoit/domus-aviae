@@ -253,8 +253,11 @@
     PROPS.forEach(p => {
       if (!p.anim) return;
       if (p.t === 'vase' && state.found.has('vase')) {
+        // glued back together: gold crack lines
         A.P.vase(ctx, p.x * TILE, p.y * TILE, 1, 1, 0);
-        A.P.brokenvase(ctx, p.x * TILE + 4, p.y * TILE + 6);
+        A.R(ctx, '#e8cf8a', p.x * TILE + 7, p.y * TILE + 3, 1, 2);
+        A.R(ctx, '#e8cf8a', p.x * TILE + 8, p.y * TILE + 5, 1, 1);
+        A.R(ctx, '#e8cf8a', p.x * TILE + 6, p.y * TILE + 6, 2, 1);
         return;
       }
       A.P[p.t](ctx, p.x * TILE, p.y * TILE, p.w || 1, p.h || 1, t);

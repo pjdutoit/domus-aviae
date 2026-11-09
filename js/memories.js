@@ -1,12 +1,12 @@
 /* =====================================================================
-   DOMUS AVIAE — ALL THE WORDS IN THE GAME
+   DOMUS AVIAE — ALL THE WORDS IN THE GAME (Latin + Afrikaans)
    ---------------------------------------------------------------------
    Edit freely. Each memory has:
-     titleLa   – short Latin title           (checked with Whitaker's Words)
-     titleEn   – English meaning of the title
-     la        – one simple Latin sentence    (checked with Whitaker's Words)
-     laEn      – literal English of that sentence
-     text      – the full memory, in English (write whatever you like here)
+     titleLa   – short Latin title             (checked with Whitaker's Words)
+     titleAf   – Afrikaans meaning of the title
+     la        – one simple Latin sentence      (checked with Whitaker's Words)
+     laAf      – Afrikaans translation of that sentence
+     text      – the full memory, in Afrikaans (write whatever you like here)
    If you change any Latin, re-run:  python tools/verify_latin.py
    The order of this list is the order the Smarties trail follows.
    ===================================================================== */
@@ -14,75 +14,75 @@
 window.MEMORIES = [
   {
     id: 'macncheese', room: 'theatrum',
-    titleLa: 'Cena Parata Est', titleEn: 'Dinner Is Ready',
-    la: 'Avia nos ad cenam vocat.', laEn: 'Grandma calls us to dinner.',
-    text: 'You would call us from the TV room, and all of us cousins came running to the table. It could only mean one thing: your famous mac & cheese.'
+    titleLa: 'Cena Parata Est', titleAf: 'Kos Is Reg',
+    la: 'Avia nos ad cenam vocat.', laAf: 'Ouma roep ons vir aandete.',
+    text: 'Ouma het ons uit die TV-kamer geroep, en al die neefs en niggies het tafel toe gehardloop. Dit kon net een ding beteken: Ouma se beroemde macaroni-en-kaas.'
   },
   {
     id: 'millionaire', room: 'theatrum',
-    titleLa: 'Ludus Quaestionum', titleEn: 'A Game of Questions',
-    la: 'Simul quaestionibus respondemus.', laEn: 'Together we answer the questions.',
-    text: 'Evenings in front of the TV watching Who Wants to Be a Millionaire together. We called out our answers, argued about the lifelines, and waited for the final answer with you.'
+    titleLa: 'Ludus Quaestionum', titleAf: "'n Vraespel",
+    la: 'Simul quaestionibus respondemus.', laAf: 'Saam beantwoord ons die vrae.',
+    text: 'Saans het ons saam met Ouma voor die TV na Who Wants to Be a Millionaire gekyk. Ons het ons antwoorde uitgeroep, oor die hulplyne gestry en saam gewag vir die finale antwoord.'
   },
   {
     id: 'christmas', room: 'theatrum',
-    titleLa: 'Natalis Domini', titleEn: 'Christmas',
-    la: 'Omnes consobrini in theatro dormimus.', laEn: 'All of us cousins sleep in the TV room.',
-    text: 'At Christmas the TV room turned into one big bedroom. All of us cousins slept side by side on the floor, whispering long after the lights went out.'
+    titleLa: 'Natalis Domini', titleAf: 'Kersfees',
+    la: 'Omnes consobrini in theatro dormimus.', laAf: 'Ons almal, die neefs en niggies, slaap in die TV-kamer.',
+    text: 'Met Kersfees het die TV-kamer een groot slaapkamer geword. Al die neefs en niggies het langs mekaar op die vloer geslaap en gefluister lank nadat die ligte af is.'
   },
   {
     id: 'latin', room: 'triclinium',
-    titleLa: 'Lingua Latina', titleEn: 'The Latin Language',
-    la: 'Avia me linguam Latinam docet.', laEn: 'Grandma teaches me the Latin language.',
-    text: 'At the dining-room table you taught me Latin: the declensions, the verbs, and the joy of finally understanding a sentence. Every Latin word in this little game is here because of you.'
+    titleLa: 'Lingua Latina', titleAf: 'Die Latynse Taal',
+    la: 'Avia me linguam Latinam docet; ego pauca memini.', laAf: 'Ouma leer my Latyn; ek onthou min daarvan.',
+    text: 'Aan die eetkamertafel het Ouma my Latyn geleer: verbuigings, vervoegings, alles. Ek gaan eerlik wees, ek onthou nie meer veel daarvan nie. Maar amo, amas, amat sit nog vas!'
   },
   {
     id: 'myths', room: 'triclinium',
-    titleLa: 'Fabulae Graecae', titleEn: 'Greek Stories',
-    la: 'Dum laborat, Avia fabulas deorum narrat.', laEn: 'While she works, Grandma tells stories of the gods.',
-    text: 'While you worked, you told me the old Greek myths: gods and heroes, monsters and long journeys home. I hung on every word.'
+    titleLa: 'Fabulae Graecae', titleAf: 'Griekse Stories',
+    la: 'Dum laborat, Avia fabulas deorum narrat.', laAf: 'Terwyl sy werk, vertel Ouma stories van die gode.',
+    text: 'Terwyl Ouma gewerk het, het sy my die ou Griekse mites vertel: gode en helde, monsters en lang reise huis toe. Ek het aan elke woord gehang.'
   },
   {
     id: 'chocolate', room: 'culina',
-    titleLa: 'Thesaurus Dulcium', titleEn: 'The Treasury of Sweets',
-    la: 'In culina arca dulcium semper plena est.', laEn: 'In the kitchen the box of sweets is always full.',
-    text: 'Your famous chocolate bin in the kitchen. Somehow it was always full, and somehow we always knew exactly where it was.'
+    titleLa: 'Thesaurus Dulcium', titleAf: 'Die Skatkis van Lekkers',
+    la: 'In culina arca dulcium semper plena est.', laAf: 'In die kombuis is die lekkergoedblik altyd vol.',
+    text: 'Ouma se beroemde sjokoladeblik in die kombuis. Op een of ander manier was dit altyd vol, en op een of ander manier het ons altyd presies geweet waar dit staan.'
   },
   {
     id: 'vase', room: 'cubiculum',
-    titleLa: 'Confessio', titleEn: 'A Confession',
-    la: 'Vasculum fregi. Ignosce mihi, Avia!', laEn: 'I broke the little vase. Forgive me, Grandma!',
-    text: 'I have something to confess. One of the small vases in your bedroom did not fall over by itself. It was me. I am very sorry, Grandma!'
+    titleLa: 'Iterum atque Iterum', titleAf: 'Weer en Weer',
+    la: 'Vasculum saepe fregi; Avia saepe glutinavit.', laAf: 'Ek het die vasie dikwels gebreek; Ouma het dit dikwels weer vasgeplak.',
+    text: "Daardie klein vasie in Ouma se slaapkamer het ek nie net een keer gebreek nie, maar 'n paar keer. En elke keer het Ouma dit geduldig weer aanmekaar geplak. (Jammer, Ouma!)"
   },
   {
     id: 'dvds', room: 'bibliotheca',
-    titleLa: 'Quid Spectabimus?', titleEn: 'What Shall We Watch?',
-    la: 'Consobrini fabulam eligunt.', laEn: 'The cousins choose a story.',
-    text: 'Choosing a DVD with the cousins was a serious negotiation. We pulled them off the shelves one by one until we finally agreed on something to watch together.'
+    titleLa: 'Quid Spectabimus?', titleAf: 'Waarna Gaan Ons Kyk?',
+    la: 'Consobrini fabulam eligunt.', laAf: "Die neefs en niggies kies 'n storie.",
+    text: "Om saam met die neefs en niggies 'n DVD te kies, was ernstige onderhandelinge. Ons het hulle een vir een van die rakke afgehaal totdat ons uiteindelik oor iets saamgestem het."
   },
   {
     id: 'forum', room: 'forum',
-    titleLa: 'In Foro', titleEn: 'At the Forum',
-    la: 'Quisque nostrum unam rem eligit.', laEn: 'Each of us chooses one thing.',
-    text: 'You took all of us to the mall, and each of us could pick one thing. Choosing was the hardest part, and the best part.'
+    titleLa: 'In Foro', titleAf: 'By die Forum',
+    la: 'Quisque nostrum unam rem eligit.', laAf: 'Elkeen van ons kies een ding.',
+    text: 'Ouma het ons almal winkelsentrum toe gevat, en elkeen van ons kon een ding kies. Kies was die moeilikste deel, en die beste deel.'
   },
   {
     id: 'bakery', room: 'pistrinum',
-    titleLa: 'Melktertjies', titleEn: 'Melktertjies',
-    la: 'In pistrino Turkstra melktertjies emimus.', laEn: 'At the Turkstra bakery we buy melktertjies.',
-    text: 'A trip to the Turkstra bakery always meant melktertjies. Nothing has ever tasted quite as good.'
+    titleLa: 'Melktertjies', titleAf: 'Melktertjies',
+    la: 'In pistrino Turkstra melktertjies emimus.', laAf: 'By die Turkstra-bakkery koop ons melktertjies.',
+    text: "'n Draai by die Turkstra-bakkery het altyd melktertjies beteken. Niks het nog ooit so lekker gesmaak nie."
   },
   {
     id: 'aardklop', room: 'aardklop',
-    titleLa: 'Pompa Aardklop', titleEn: 'The Aardklop Procession',
-    la: 'Post Aviam et iuxta eam ambulamus.', laEn: 'We walk behind Grandma and beside her.',
-    text: 'At Aardklop all of us cousins walked behind you and beside you, a little procession following you through the festival.'
+    titleLa: 'Pompa Aardklop', titleAf: 'Die Aardklop-optog',
+    la: 'Post Aviam et iuxta eam ambulamus.', laAf: 'Ons loop agter Ouma en langs haar.',
+    text: "By Aardklop het al die neefs en niggies agter Ouma en langs Ouma geloop: 'n klein optog wat Ouma deur die fees gevolg het."
   },
   {
     id: 'piano', room: 'oecus',
-    titleLa: 'Litterae in Clavibus', titleEn: 'Letters on the Keys',
-    la: 'Avia litteras in clavibus scribit.', laEn: 'Grandma writes letters on the keys.',
-    text: 'You taught me piano on a keyboard in the living room. You wrote the name of every note on its key, so I always knew where my fingers should go.'
+    titleLa: 'Litterae in Clavibus', titleAf: 'Letters op die Klawers',
+    la: 'Avia litteras in clavibus scribit.', laAf: 'Ouma skryf letters op die klawers.',
+    text: "Ouma het my klavier leer speel op 'n klawerbord in die sitkamer. Ouma het die naam van elke noot op sy klawer geskryf, sodat ek altyd geweet het waar my vingers moet gaan."
   }
 ];
 
@@ -91,63 +91,63 @@ window.MEMORIES = [
    --------------------------------------------------------------------- */
 window.TEXTS = {
   title: 'DOMVS · AVIAE',
-  subtitle: "Grandma's House",
+  subtitle: 'Ouma se Huis',
   enter: 'Intra',                    // "Enter!"
-  enterEn: 'Enter',
+  enterAf: 'Kom binne',
 
   intro: [
-    'Every Easter you hid Smarties all through the house, and all of us cousins hunted for them, room by room.',
-    'This time the hunt is yours.',
-    'Follow the Smarties. The treasure, this time, is our memories.'
+    'Elke Paasfees het Ouma Smarties regdeur die huis weggesteek, en ons neefs en niggies het kamer vir kamer daarna gesoek.',
+    'Hierdie keer is dit Ouma se beurt om te soek.',
+    'Volg die Smarties. Die skat, hierdie keer, is ons herinneringe.'
   ],
-  introHint: 'Tap anywhere to walk. Tap a glowing spot to open a memory.',
+  introHint: "Tik enige plek om te loop. Tik op 'n blink plek om 'n herinnering oop te maak.",
   begin: 'Perge',                    // "Go on!"
-  beginEn: 'Begin',
+  beginAf: 'Begin',
 
   counter: 'Memoriae',               // "Memories"
   newMemoryLa: 'Memoria inventa',    // "A memory found"
-  newMemoryEn: 'A memory found',
+  newMemoryAf: 'Herinnering gevind',
   galleryTitle: 'Memoriae Inventae', // "Memories found"
-  galleryEmpty: 'Follow the Smarties to find your first memory.',
+  galleryEmpty: 'Volg die Smarties na die eerste herinnering.',
   close: 'Perge',                    // "Go on!"
   restart: 'Denuo incipe',           // "Begin again"
-  restartEn: 'Start again',
-  restartConfirm: 'Start the hunt again from the beginning?',
+  restartAf: 'Begin weer',
+  restartConfirm: 'Begin die soektog weer van voor af?',
 
   lockedLa: 'Ianua clausa est.',     // "The door is closed."
-  lockedEn: 'The study door is locked. Find all twelve memories first.',
+  lockedAf: 'Die studeerkamer is gesluit. Vind eers al twaalf herinneringe.',
   unlockedLa: 'Ianua aperta est!',   // "The door is open!"
-  unlockedEn: 'The study door is open. Follow the Smarties one last time.',
+  unlockedAf: 'Die studeerkamer is oop. Volg die Smarties nog een laaste keer.',
 
   finaleTitleLa: 'Tablinum, Hodie',  // "The study, today"
-  finaleTitleEn: 'Your Study, Today',
+  finaleTitleAf: 'Ouma se Studeerkamer, Vandag',
   finaleLa: 'Dominicis noctibus hic clavibus cano, quia tu me docuisti.',
-  finaleLaEn: 'On Sunday nights I play the keys here, because you taught me.',
-  finaleText: 'Your study, today. On Sunday nights I sit here and play the piano, all because of a little keyboard in the living room and the letters you wrote on every key.',
+  finaleLaAf: 'Op Sondagaande speel ek hier klavier, want Ouma het my geleer.',
+  finaleText: "Ouma se studeerkamer, vandag. Op Sondagaande sit ek hier en speel klavier, alles danksy 'n klein klawerbord in die sitkamer en die letters wat Ouma op elke klawer geskryf het.",
 
   inscription: ['FELICEM · DIEM', 'NATALEM', 'AVIA'],   // one entry per carved line
-  inscriptionSub: 'NEPOTES · TVI · TE · AMANT',   // "Your grandchildren love you"
-  inscriptionSubEn: 'Your grandchildren love you',
-  dedication: 'Happy birthday, Grandma. Thank you for every Easter hunt, every story, every lesson and every bowl of mac & cheese. You are our greatest treasure.',
-  signature: 'With all our love, your grandchildren',
+  inscriptionSub: 'TE · SEMPER · AMABO',              // "I will always love you"
+  inscriptionSubAf: 'Ek sal Ouma altyd liefhê',
+  dedication: 'Gelukkige verjaarsdag, Ouma! Dankie vir elke Paasfees-soektog, elke storie, elke les en elke bord macaroni-en-kaas. Ouma is vir my die grootste skat.',
+  signature: 'Met al my liefde',
   revisit: 'Memoriae',
-  revisitEn: 'Revisit the memories',
+  revisitAf: 'Kyk weer na die herinneringe',
 
-  credit: 'Floor tiles by Thalia Took'
+  credit: 'Vloerteëls deur Thalia Took'
 };
 
 /* Room names shown when you walk into a room. */
 window.ROOM_NAMES = {
-  atrium:      { la: 'Atrium',      en: 'Entrance hall' },
-  theatrum:    { la: 'Theatrum',    en: 'TV room' },
-  triclinium:  { la: 'Triclinium',  en: 'Dining room' },
-  oecus:       { la: 'Oecus',       en: 'Living room' },
-  bibliotheca: { la: 'Bibliotheca', en: 'DVD room' },
-  cubiculum:   { la: 'Cubiculum',   en: 'Bedroom' },
-  culina:      { la: 'Culina',      en: 'Kitchen' },
-  tablinum:    { la: 'Tablinum',    en: 'Study' },
-  oppidum:     { la: 'Forum Oppidi', en: 'The town square' },
-  forum:       { la: 'Forum',       en: 'The mall' },
-  pistrinum:   { la: 'Pistrinum',   en: 'Turkstra bakery' },
-  aardklop:    { la: 'Aardklop',    en: 'Aardklop festival' }
+  atrium:      { la: 'Atrium',       af: 'Voorportaal' },
+  theatrum:    { la: 'Theatrum',     af: 'TV-kamer' },
+  triclinium:  { la: 'Triclinium',   af: 'Eetkamer' },
+  oecus:       { la: 'Oecus',        af: 'Sitkamer' },
+  bibliotheca: { la: 'Bibliotheca',  af: 'DVD-kamer' },
+  cubiculum:   { la: 'Cubiculum',    af: 'Slaapkamer' },
+  culina:      { la: 'Culina',       af: 'Kombuis' },
+  tablinum:    { la: 'Tablinum',     af: 'Studeerkamer' },
+  oppidum:     { la: 'Forum Oppidi', af: 'Die dorpsplein' },
+  forum:       { la: 'Forum',        af: 'Die winkelsentrum' },
+  pistrinum:   { la: 'Pistrinum',    af: 'Turkstra-bakkery' },
+  aardklop:    { la: 'Aardklop',     af: 'Aardklop-fees' }
 };
