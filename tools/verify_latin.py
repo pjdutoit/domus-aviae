@@ -23,7 +23,7 @@ SRC = Path(__file__).resolve().parent.parent / "js" / "memories.js"
 NOT_LATIN = {"turkstra", "melktertjies", "aardklop"}          # Afrikaans names, kept as-is
 LATIN_KEYS = ("titleLa", "la", "enter", "begin", "counter", "newMemoryLa", "galleryTitle",
               "close", "restart", "lockedLa", "unlockedLa", "finaleTitleLa", "finaleLa",
-              "inscriptionSub", "title", "revisit")
+              "inscriptionSub", "title", "revisit", "helpTitle")
 OFFLINE = "--offline" in sys.argv
 
 

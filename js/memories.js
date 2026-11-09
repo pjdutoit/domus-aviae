@@ -16,19 +16,19 @@ window.MEMORIES = [
     id: 'macncheese', room: 'theatrum',
     titleLa: 'Cena Parata Est', titleAf: 'Kos Is Reg',
     la: 'Avia nos ad cenam vocat.', laAf: 'Ouma roep ons vir aandete.',
-    text: 'Ouma het ons uit die TV-kamer geroep, en al die neefs en niggies het tafel toe gehardloop. Dit kon net een ding beteken: Ouma se beroemde macaroni-en-kaas.'
+    text: 'Ouma het ons uit die TV-kamer geroep, en al die neefies en niggies het tafel toe gehardloop. Dit kon net een ding beteken: Ouma se famous macorini en cheese.'
   },
   {
     id: 'millionaire', room: 'theatrum',
     titleLa: 'Ludus Quaestionum', titleAf: "'n Vraespel",
     la: 'Simul quaestionibus respondemus.', laAf: 'Saam beantwoord ons die vrae.',
-    text: 'Saans het ons saam met Ouma voor die TV na Who Wants to Be a Millionaire gekyk. Ons het ons antwoorde uitgeroep, oor die hulplyne gestry en saam gewag vir die finale antwoord.'
+    text: 'In die aande het ek met Ouma voor die TV na Who Wants to Be a Millionaire gekyk. Ons het ons antwoorde uitgeroep, oor die hulplyne gestry en saam gewag vir die finale antwoord.'
   },
   {
     id: 'christmas', room: 'theatrum',
     titleLa: 'Natalis Domini', titleAf: 'Kersfees',
-    la: 'Omnes consobrini in theatro dormimus.', laAf: 'Ons almal, die neefs en niggies, slaap in die TV-kamer.',
-    text: 'Met Kersfees het die TV-kamer een groot slaapkamer geword. Al die neefs en niggies het langs mekaar op die vloer geslaap en gefluister lank nadat die ligte af is.'
+    la: 'Omnes consobrini in theatro dormimus.', laAf: 'Ons almal, die neefies en niggies, slaap in die TV-kamer.',
+    text: 'Met Kersfees het die TV-kamer een groot slaapkamer geword. Al die neefies en niggies het langs mekaar op die vloer geslaap en gefluister lank nadat die ligte af is.'
   },
   {
     id: 'latin', room: 'triclinium',
@@ -40,31 +40,31 @@ window.MEMORIES = [
     id: 'myths', room: 'triclinium',
     titleLa: 'Fabulae Graecae', titleAf: 'Griekse Stories',
     la: 'Dum laborat, Avia fabulas deorum narrat.', laAf: 'Terwyl sy werk, vertel Ouma stories van die gode.',
-    text: 'Terwyl Ouma gewerk het, het sy my die ou Griekse mites vertel: gode en helde, monsters en lang reise huis toe. Ek het aan elke woord gehang.'
+    text: 'Terwyl Ouma gewerk het, het jy my die ou Griekse mites vertel: gode en helde, monsters en lang reise huis toe. Ek het aan elke woord gehang.'
   },
   {
     id: 'chocolate', room: 'culina',
     titleLa: 'Thesaurus Dulcium', titleAf: 'Die Skatkis van Lekkers',
     la: 'In culina arca dulcium semper plena est.', laAf: 'In die kombuis is die lekkergoedblik altyd vol.',
-    text: 'Ouma se beroemde sjokoladeblik in die kombuis. Op een of ander manier was dit altyd vol, en op een of ander manier het ons altyd presies geweet waar dit staan.'
+    text: 'Ouma se beroemde chocolate blik in die kombuis. Op een of ander manier was dit altyd vol.'
   },
   {
     id: 'vase', room: 'cubiculum',
     titleLa: 'Iterum atque Iterum', titleAf: 'Weer en Weer',
-    la: 'Vasculum saepe fregi; Avia saepe glutinavit.', laAf: 'Ek het die vasie dikwels gebreek; Ouma het dit dikwels weer vasgeplak.',
-    text: "Daardie klein vasie in Ouma se slaapkamer het ek nie net een keer gebreek nie, maar 'n paar keer. En elke keer het Ouma dit geduldig weer aanmekaar geplak. (Jammer, Ouma!)"
+    la: 'Vasculum saepe fregi; Avia saepe glutinavit.', laAf: 'Ek het die vase dikwels gebreek; Ouma het dit dikwels weer vasgeplak.',
+    text: "Daardie klein vase in Ouma se slaapkamer het ek nie net een keer gebreek nie, maar 'n paar keer. En elke keer het Ouma dit geduldig weer aanmekaar geplak. (Jammer, Ouma!)"
   },
   {
     id: 'dvds', room: 'bibliotheca',
     titleLa: 'Quid Spectabimus?', titleAf: 'Waarna Gaan Ons Kyk?',
-    la: 'Consobrini fabulam eligunt.', laAf: "Die neefs en niggies kies 'n storie.",
-    text: "Om saam met die neefs en niggies 'n DVD te kies, was ernstige onderhandelinge. Ons het hulle een vir een van die rakke afgehaal totdat ons uiteindelik oor iets saamgestem het."
+    la: 'Consobrini fabulam eligunt.', laAf: "Die neefies en niggies kies 'n storie.",
+    text: "Om saam met die neefies en niggies 'n DVD te kies, was ernstige onderhandelinge. Ons het hulle een vir een van die rakke afgehaal totdat ons uiteindelik oor iets saamgestem het."
   },
   {
     id: 'forum', room: 'forum',
     titleLa: 'In Foro', titleAf: 'By die Forum',
     la: 'Quisque nostrum unam rem eligit.', laAf: 'Elkeen van ons kies een ding.',
-    text: 'Ouma het ons almal winkelsentrum toe gevat, en elkeen van ons kon een ding kies. Kies was die moeilikste deel, en die beste deel.'
+    text: 'Ouma het ons almal mall toe gevat, en elkeen van ons kon een ding kies. Kies was die moeilikste deel, en die beste deel.'
   },
   {
     id: 'bakery', room: 'pistrinum',
@@ -76,13 +76,13 @@ window.MEMORIES = [
     id: 'aardklop', room: 'aardklop',
     titleLa: 'Pompa Aardklop', titleAf: 'Die Aardklop-optog',
     la: 'Post Aviam et iuxta eam ambulamus.', laAf: 'Ons loop agter Ouma en langs haar.',
-    text: "By Aardklop het al die neefs en niggies agter Ouma en langs Ouma geloop: 'n klein optog wat Ouma deur die fees gevolg het."
+    text: "By Aardklop het al die neefies en niggies agter Ouma en langs Ouma geloop: 'n klein optog wat Ouma deur die fees gevolg het."
   },
   {
     id: 'piano', room: 'oecus',
     titleLa: 'Litterae in Clavibus', titleAf: 'Letters op die Klawers',
     la: 'Avia litteras in clavibus scribit.', laAf: 'Ouma skryf letters op die klawers.',
-    text: "Ouma het my klavier leer speel op 'n klawerbord in die sitkamer. Ouma het die naam van elke noot op sy klawer geskryf, sodat ek altyd geweet het waar my vingers moet gaan."
+    text: "Ouma het my klavier leer speel op 'n keyboard in die sitkamer. Ouma het die naam van elke noot op sy ooreenstemende noot met 'n koukie geskryf, sodat ek altyd geweet het waar my vingers moet gaan."
   }
 ];
 
@@ -96,13 +96,24 @@ window.TEXTS = {
   enterAf: 'Kom binne',
 
   intro: [
-    'Elke Paasfees het Ouma Smarties regdeur die huis weggesteek, en ons neefs en niggies het kamer vir kamer daarna gesoek.',
+    'Elke Paasfees het Ouma Smarties regdeur die huis weggesteek, en ons neefies en niggies het kamer vir kamer daarna gesoek.',
     'Hierdie keer is dit Ouma se beurt om te soek.',
     'Volg die Smarties. Die skat, hierdie keer, is ons herinneringe.'
   ],
   introHint: "Tik enige plek om te loop. Tik op 'n blink plek om 'n herinnering oop te maak.",
   begin: 'Perge',                    // "Go on!"
   beginAf: 'Begin',
+
+  helpTitle: 'Auxilium',             // "Help"
+  helpTitleAf: 'Hoe om te speel',
+  help: [
+    'Tik enige plek op die kaart, en Ouma loop soontoe. (Op \'n rekenaar werk die pyltjies ook.)',
+    'Volg die Smarties: hulle wys die pad na die volgende herinnering.',
+    '\'n Goue sterretjie wys waar \'n herinnering wag. Tik daarop om dit oop te maak.',
+    'Tik op MEMORIAE bo-aan om die herinneringe wat reeds gevind is weer te lees.',
+    'Op elke kaartjie kan jy tussen Latine en Afrikaans wissel.',
+    'Wanneer al twaalf gevind is, gaan die studeerkamer oop.'
+  ],
 
   counter: 'Memoriae',               // "Memories"
   newMemoryLa: 'Memoria inventa',    // "A memory found"
@@ -121,9 +132,9 @@ window.TEXTS = {
 
   finaleTitleLa: 'Tablinum, Hodie',  // "The study, today"
   finaleTitleAf: 'Ouma se Studeerkamer, Vandag',
-  finaleLa: 'Dominicis noctibus hic clavibus cano, quia tu me docuisti.',
-  finaleLaAf: 'Op Sondagaande speel ek hier klavier, want Ouma het my geleer.',
-  finaleText: "Ouma se studeerkamer, vandag. Op Sondagaande sit ek hier en speel klavier, alles danksy 'n klein klawerbord in die sitkamer en die letters wat Ouma op elke klawer geskryf het.",
+  finaleLa: 'Dominicis noctibus hic clavibus cano, quia tu me olim incitavisti.',
+  finaleLaAf: 'Op Sondagaande speel ek hier klavier, want Ouma het my daai tyd inspireer.',
+  finaleText: "Ouma se studeerkamer, vandag. Op Sondagaande sit ek hier en speel klavier, alles danksy 'n klein keyboard in die sitkamer en die letters wat Ouma op elke noot geskryf het.",
 
   inscription: ['FELICEM · DIEM', 'NATALEM', 'AVIA'],   // one entry per carved line
   inscriptionSub: 'TE · SEMPER · AMABO',              // "I will always love you"
@@ -147,7 +158,7 @@ window.ROOM_NAMES = {
   culina:      { la: 'Culina',       af: 'Kombuis' },
   tablinum:    { la: 'Tablinum',     af: 'Studeerkamer' },
   oppidum:     { la: 'Forum Oppidi', af: 'Die dorpsplein' },
-  forum:       { la: 'Forum',        af: 'Die winkelsentrum' },
+  forum:       { la: 'Forum',        af: 'Die mall' },
   pistrinum:   { la: 'Pistrinum',    af: 'Turkstra-bakkery' },
   aardklop:    { la: 'Aardklop',     af: 'Aardklop-fees' }
 };

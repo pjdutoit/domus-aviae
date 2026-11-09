@@ -145,6 +145,24 @@
   }
   function closeGallery() { hide($('gallery')); window.Game.state.busy = false; }
 
+  // ------------------------------------------------------------ help
+  function openHelp() {
+    const st = window.Game.state;
+    if (st.busy) return;
+    st.busy = true;
+    $('helpTitle').textContent = T.helpTitle;
+    $('helpSub').textContent = T.helpTitleAf;
+    $('helpList').innerHTML = '';
+    T.help.forEach(line => { const li = document.createElement('li'); li.textContent = line; $('helpList').appendChild(li); });
+    $('helpClose').querySelector('.la').textContent = T.close;
+    show($('help'));
+  }
+  function closeHelp() {
+    if (!$('help').classList.contains('show')) return;
+    hide($('help'));
+    window.Game.state.busy = false;
+  }
+
   // ------------------------------------------------------------ finale & monument
   function openFinale(onDone) {
     $('finaleTitle').textContent = T.finaleTitleLa;
@@ -246,6 +264,10 @@
       if (window.confirm(T.restartConfirm)) { closeGallery(); window.Game.restart(); }
     });
 
+    $('helpBtn').addEventListener('click', openHelp);
+    $('helpClose').addEventListener('click', closeHelp);
+    $('help').addEventListener('click', e => { if (e.target === $('help')) closeHelp(); });
+
     $('sound').addEventListener('click', () => {
       window.GameAudio.unlock();
       window.GameAudio.setMuted(!window.GameAudio.isMuted());
@@ -253,7 +275,7 @@
     });
 
     window.addEventListener('keydown', e => {
-      if (e.key === 'Escape') { if ($('card').classList.contains('show')) closeCard(); else if ($('gallery').classList.contains('show')) closeGallery(); }
+      if (e.key === 'Escape') { if ($('card').classList.contains('show')) closeCard(); else if ($('gallery').classList.contains('show')) closeGallery(); else closeHelp(); }
     });
   }
 

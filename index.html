@@ -23,7 +23,22 @@
         <span class="lbl"></span>
         <span class="num"><b>0</b>/12</span>
       </button>
-      <button id="sound" class="pill icon" aria-label="Sound on or off"></button>
+      <div class="hud-right">
+        <button id="helpBtn" class="pill icon help-icon" aria-label="Hulp">?</button>
+        <button id="sound" class="pill icon" aria-label="Klank aan of af"></button>
+      </div>
+    </div>
+
+    <!-- Help -->
+    <div id="help" class="modal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="card-panel">
+        <h2 id="helpTitle"></h2>
+        <p class="help-sub" id="helpSub"></p>
+        <ol class="help-list" id="helpList"></ol>
+        <div class="card-actions end">
+          <button id="helpClose" class="btn-roman small"><span class="la"></span></button>
+        </div>
+      </div>
     </div>
 
     <div id="toast" aria-live="polite"><div class="la"></div><div class="en"></div></div>

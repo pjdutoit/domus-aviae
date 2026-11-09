@@ -196,6 +196,23 @@ button { font: inherit; color: inherit; touch-action: manipulation; cursor: poin
 .pill.icon { width: 44px; padding: 0; justify-content: center; }
 .pill.icon svg { width: 20px; height: 20px; }
 .smartie-dot { width: 13px; height: 10px; background: #e53935; animation: none; }
+.hud-right { display: flex; gap: 8px; }
+.help-icon { font-family: var(--roman); font-size: 1.25rem; letter-spacing: 0; }
+
+/* help */
+.help-sub { font-style: italic; color: var(--ink-soft); margin: 0 0 10px; font-size: 1.05rem; }
+.help-list { text-align: left; margin: 0 0 16px; padding: 0; list-style: none; counter-reset: h; }
+.help-list li {
+  counter-increment: h; position: relative; padding: 9px 0 9px 40px;
+  font-size: clamp(1.05rem, 4.1vw, 1.18rem); line-height: 1.4; color: var(--ink);
+  border-bottom: 1px solid rgba(201,162,74,.35);
+}
+.help-list li:last-child { border-bottom: 0; }
+.help-list li::before {
+  content: counter(h, upper-roman); position: absolute; left: 0; top: 9px; width: 30px;
+  font-family: var(--roman); font-weight: 700; color: var(--red-ink); text-align: center;
+}
+.card-actions.end { justify-content: flex-end; }
 
 /* ------------------------------------------------------------ toast */
 #toast {
