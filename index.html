@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#5a1410">
+  <title>Domus Aviae</title>
+  <meta name="description" content="A birthday gift: a little Roman villa full of memories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%235a1410'/%3E%3Ccircle cx='8' cy='8' r='4' fill='%23e8c45a'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" aria-label="Map of the villa. Tap to walk."></canvas>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+      <button id="counter" class="pill" aria-label="Memories found">
+        <span class="smartie-dot"></span>
+        <span class="lbl"></span>
+        <span class="num"><b>0</b>/12</span>
+      </button>
+      <button id="sound" class="pill icon" aria-label="Sound on or off"></button>
+    </div>
+
+    <div id="toast" aria-live="polite"><div class="la"></div><div class="en"></div></div>
+
+    <!-- Title -->
+    <section id="title" class="screen show">
+      <div class="title-inner">
+        <div class="tabula">
+          <div class="tabula-face">
+            <h1 id="titleText"></h1>
+          </div>
+        </div>
+        <p class="subtitle" id="subtitleText"></p>
+        <div class="smartie-row" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button id="enterBtn" class="btn-roman" disabled><span class="la"></span><span class="en"></span></button>
+        <p class="loading" id="loading">…</p>
+      </div>
+      <footer class="credit"></footer>
+    </section>
+
+    <!-- Intro -->
+    <section id="intro" class="screen">
+      <div class="parchment">
+        <div class="intro-text" id="introText"></div>
+        <p class="hint" id="introHint"></p>
+        <button id="beginBtn" class="btn-roman"><span class="la"></span><span class="en"></span></button>
+      </div>
+    </section>
+
+    <!-- Memory card -->
+    <div id="card" class="modal" role="dialog" aria-modal="true" aria-labelledby="cardTitle">
+      <div class="card-panel">
+        <div class="card-new" id="cardNew">Memoria inventa · A memory found</div>
+        <div class="vig-frame"><canvas id="cardVig"></canvas></div>
+        <h2 id="cardTitle"></h2>
+        <p class="card-la" id="cardLa"></p>
+        <p class="card-text" id="cardText"></p>
+        <div class="card-actions">
+          <div class="seg" role="group" aria-label="Language">
+            <button data-lang="la">Latine</button><button data-lang="en">English</button>
+          </div>
+          <button id="cardClose" class="btn-roman small"><span class="la"></span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery" class="modal" role="dialog" aria-modal="true" aria-labelledby="galTitle">
+      <div class="card-panel">
+        <h2 id="galTitle"></h2>
+        <p class="gal-empty" id="galEmpty"></p>
+        <div class="gal-grid" id="galGrid"></div>
+        <div class="card-actions">
+          <button id="restartBtn" class="link-btn"></button>
+          <button id="galClose" class="btn-roman small"><span class="la"></span></button>
+        </div>
+        <p class="credit-inline"></p>
+      </div>
+    </div>
+
+    <!-- Finale: the study, today -->
+    <section id="finale" class="screen night">
+      <div class="finale-inner">
+        <div class="vig-frame big"><canvas id="finaleVig"></canvas></div>
+        <h2 id="finaleTitle"></h2>
+        <p class="card-la" id="finaleLa"></p>
+        <p class="card-text" id="finaleText"></p>
+        <button id="finaleNext" class="btn-roman"><span class="la"></span></button>
+      </div>
+    </section>
+
+    <!-- Monument -->
+    <section id="monument" class="screen">
+      <div class="monument-inner">
+        <div class="stele">
+          <div class="stele-top"></div>
+          <div class="stele-face">
+            <div class="inscr" id="inscr"></div>
+            <div class="inscr-rule"></div>
+            <div class="inscr-sub" id="inscrSub"></div>
+          </div>
+          <div class="stele-base"></div>
+        </div>
+        <p class="inscr-en" id="inscrSubEn"></p>
+        <p class="dedication" id="dedication"></p>
+        <p class="signature" id="signature"></p>
+        <button id="revisitBtn" class="btn-roman small"><span class="la"></span><span class="en"></span></button>
+      </div>
+      <footer class="credit"></footer>
+    </section>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/memories.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/sprites.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/vignettes.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
